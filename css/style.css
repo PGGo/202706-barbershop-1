@@ -1,0 +1,344 @@
+body {
+  min-width: 1122px;
+  min-height: 1750px;
+  margin: 0;
+  padding: 0;
+
+  color: #000000;
+
+  font-family: "Sans Narrow", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+h1 {
+  text-transform: uppercase;
+
+  color: #000000;
+
+  font-family: "Sans Narrow", "Arial", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+h2 {
+  color: #000000;
+
+  font-family: "Sans Narrow", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.clearfix::after {
+  display: table;
+  clear: both;
+
+  content: "";
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+
+  background-color: rgba(169, 201, 27, 0.5);
+}
+
+.main-header {
+  margin-bottom: 60px;
+}
+
+.main-navigation {
+  float: left;
+
+  width: 780px;
+  min-height: 70px;
+}
+
+.user-block {
+  float: right;
+
+  width: 140px;
+  min-height: 70px;
+}
+
+.index-logo {
+  width: 368px;
+  min-height: 204px;
+  margin-right: auto;
+  margin-bottom: 25px;
+  margin-left: auto;
+}
+
+.features {
+  margin-bottom: 80px;
+}
+
+.features-item {
+  float: left;
+
+  width: 300px;
+  min-height: 175px;
+  margin-right: 20px;
+}
+
+.features-item:last-child {
+  margin-right: 0;
+}
+
+.index-content {
+  margin-bottom: 35px;
+  padding: 50px 80px;
+}
+
+.index-content-left {
+  float: left;
+
+  width: 380px;
+  min-height: 330px;
+}
+
+.index-content-right {
+  float: right;
+
+  width: 300px;
+  min-height: 330px;
+}
+
+.main-footer {
+  margin-top: 65px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.footer-contacts {
+  float: left;
+
+  width: 320px;
+  min-height: 90px;
+  margin-right: 60px;
+}
+
+.footer-social {
+  float: left;
+
+  width: 180px;
+  min-height: 90px;
+}
+
+.footer-copyright {
+  float: right;
+
+  width: 180px;
+  min-height: 90px;
+}
+
+/* нужна ли минимальная высота? */
+.breadcrumbs {
+  width: 550px;
+  min-height: 25px;
+  margin-bottom: 50px;
+}
+
+.filters {
+  float: left;
+
+  width: 220px;
+  margin-right: 20px;
+}
+
+.products {
+  float: right;
+
+  width: 700px;
+  margin-bottom: 25px;
+
+  font-size: 0px;
+}
+
+/* нужна ли минимальная высота? */
+.pages {
+  clear: both;
+
+  min-height: 43px;
+  margin-left: 240px;
+}
+
+.products-item {
+  display: inline-block;
+
+  width: 220px;
+  /* здесь через минимальную высоту? */
+  min-height: 286px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  vertical-align: top;
+
+  font-size: 14px;
+}
+
+.products-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+/* как лучше потом сделать, чтобы текст отталкивался от картинки? */
+.products-item span {
+  padding: 20px;
+}
+
+.main-footer-pages {
+  margin-top: 50px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.catalog-item-photo {
+  float: left;
+
+  width: 498px;
+  margin-right: 32px;
+
+  font-size: 0px;
+}
+
+.photo-big {
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
+/* как лучше вниз опустить последний абзац? */
+.catalog-item-content {
+  float: right;
+
+  width: 390px;
+  padding: 10px;
+}
+
+.photos-small {
+  margin: 0;
+}
+
+.photo-small {
+  display: inline-block;
+
+  width: 166px;
+  margin: 0;
+}
+
+
+
+/*======================================
+ Системное оформление - не изменять
+=======================================*/
+
+body {
+  padding: 3px;
+}
+
+body > *,
+body > * > *,
+body > * > * > * {
+  position: relative;
+}
+
+body > *::before,
+body > * > *::before,
+body > * > * > *::before {
+  position: absolute;
+
+  height: 24px;
+  padding: 2px 5px;
+
+  content: "";
+  white-space: nowrap;
+
+  font-family: "Courier New", monotype;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+body > *::before {
+  top: -3px;
+  left: -3px;
+}
+
+body > * > *::before {
+  top: -3px;
+  left: -3px;
+}
+
+body > * > * > *::before {
+  top: 0;
+  left: 0;
+}
+
+body > * {
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
+}
+
+body > *::before {
+  color: white;
+  background: green;
+}
+
+body > * > * {
+  background: rgba(255, 45, 82, 0.2);
+  box-shadow: 0 0 0 3px rgb(255, 45, 82);
+}
+
+body > * > *::before {
+  color: white;
+  background: rgb(255, 45, 82);
+}
+
+body > * > * > * {
+  background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+
+}
+
+body > * > * > *::before {
+  color: black;
+  background: rgb(234, 255, 45);
+}
+
+.main-header::before {
+  content: ".main-header";
+}
+
+.container::before {
+  content: ".container";
+}
+
+.main-header .container::before {
+  top: auto;
+  bottom: -28px;
+}
+
+.main-navigation::before {
+  content: ".main-navigation";
+}
+
+.user-block::before {
+  content: ".user-block";
+}
+
+.index-logo::before {
+  content: ".index-logo";
+}
+
+.features::before {
+  top: -28px;
+
+  content: ".features";
+}
+
+.features-item::before {
+  content: ".features-item";
+}
